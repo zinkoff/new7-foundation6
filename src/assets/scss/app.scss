@@ -1,0 +1,167 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+/*###########CUSTOM###########*/
+
+$global-width: rem-calc(1200);
+$global-font-size: 100%;
+$global-lineheight: 1.5;
+$primary-color: #2199e8;
+$secondary-color: #777;
+$success-color: #3adb76;
+$warning-color: #ffae00;
+$alert-color: #ec5840;
+$light-gray: #f3f3f3;
+$light-gray: #f3f3f3;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+$body-background: $white;
+$body-font-color: $black;
+//$body-font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//$body-font-family: "Droid Serif", "Georgia", serif;
+$body-antialiased: true;
+$text-direction: ltr;
+$global-margin: 1rem;
+$global-padding: 1rem;
+$global-margin: 1rem;
+$global-weight-normal: normal;
+$global-weight-bold: bold;
+$global-radius: 3px;
+$global-namespace: false;
+$global-text-direction: ltr;
+$rem-base: 16px;
+
+/*		fonts	*/
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600);
+
+
+.docs-color-block-primary {
+    background: $primary-color;
+}
+
+.docs-color-block-secondary {
+    background: $secondary-color;
+}
+
+.docs-color-block-success {
+    background: $success-color;
+}
+
+.docs-color-block-warning {
+    background: $warning-color;
+}
+
+.docs-color-block-alert {
+    background: $alert-color;
+}
+
+.docs-color-block-white {
+    background: $white;
+}
+
+.docs-color-block-light-gray {
+    background: $light-gray;
+}
+
+.docs-color-block-medium-gray {
+    background: $medium-gray;
+}
+
+.docs-color-block-dark-gray {
+    background: #8a8a8a;
+}
+
+.docs-color-block-black {
+    background: #0a0a0a;
+}
+
+/*	logo	*/
+#logo>img{max-height:remCalc(50);}
+/* test 	*/
+.bg-yellow{background:yellow;}
+.bg-red{background:red;}
+.bg-blue{background:blue;}
+.bg-green{background:green;}
+.bg-orange{background:orange;}
+.bg-pink{background:pink;}
+.bg-brown{background:brown;}
+.bg-purple{background:purple;}
+.bg-banner{background-image:url(/assets/img/banner1.png);background-position: 0;}
+
+/* text */
+.uc { text-transform: uppercase; }
+
+p.big {
+	color:#fff;
+	font-size: 120%;
+}
+.sans{font-family:'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+.serif{font-family:'Droid Serif', Georgia, serif;}
+p {vertical-align: baseline;line-height:22px;font-size:12px;font-family:'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;color: rgb(85, 85, 85);}
+h2,h3,h4,h5,h6{color: rgb(85, 85, 85);font-family:'Droid Serif', Georgia, serif;}
+h2 {margin-top:20px;
+	font-size:16px;background: transparent url(/assets/img/line.gif) 0 center repeat-x;
+	span {background:#fff;padding:10px;padding-right:10px;}
+	}
+h3{font-size:1rem;font-weight:700;}
+h4{font-size:1rem;em{background:none;padding:2rem;margin:2rem;}}
+h5
+{
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+/*	buttons */
+
+/*	banner	*/
+#banner {color:#ffffff;background-color: #B0C6C5;
+	background-image: url(/assets/img/banner1.png);
+	background-position: 0;padding:3rem;}
+
+	/* 	callout	*/
+	.callout{background:#fff;}
+	a.button.hollow{margin: 1rem 1rem 1rem 0;}
