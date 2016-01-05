@@ -7,10 +7,9 @@
 	</div>
 
 <!--banner-->
-	<div id="banner">
+	<div id="payoff">
 		<div class="row">
-<!--data-equalizer data-equalize-on="large"-->
-			<div class="small-12 small-centered medium-9 medium-centered large-6 large-centered columns  media-object-section.middle text-center" data-equalizer-watch>
+			<div class="small-12 small-centered medium-9 medium-centered large-6 large-centered columns  text-center">
 				{{> payoff}}
 			</div>
 		</div>
@@ -22,13 +21,41 @@
 			{{> kunder}}
 		</div>
 	</div>
-	{{> services}}
 
+<!--services-->
 	<div class="row">
-		<div class="small-12 medium-10 medium-centered large-9 large-centered columns text-center">{{> samarbejdet}}</div>
+		<div class="small-12 medium-10 medium-centered large-9 large-centered columns ">
+			{{> services}}
+		</div>
 	</div>
 
+<!--samarbejder-->
 	<div class="row">
-		<div class="small-12 medium-10 medium-centered large-9 large-centered columns text-center">{{> teamet}}</div>
+		<div class="small-12 medium-10 medium-centered large-9 large-centered columns ">
+			{{> samarbejdet}}
+		</div>
+	</div>
+
+<!--teamet-->
+	<div class="row">
+		<div class="small-12 medium-10 medium-centered large-9 large-centered columns ">
+			{{> teamet}}
+		</div>
+	</div>
+
+<!--om-mig-->
+	<div class="row">
+		<div class="small-12 medium-10 medium-centered large-9 large-centered columns ">
+			{{> om-mig}}
+		</div>
+	</div>
+
+<!--footer-->
+	<div class="row bg-dark">
+		<div class="small-12 medium-10 medium-centered large-9 large-centered columns ">
+			{{> footer}}
+		</div>
 	</div>
 </div>
+
+

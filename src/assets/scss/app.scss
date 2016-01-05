@@ -4,6 +4,7 @@
 @import 'foundation';
 @import 'motion-ui';
 
+
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
@@ -49,6 +50,7 @@ $global-width: rem-calc(1200);
 $global-font-size: 100%;
 $global-lineheight: 1.5;
 $primary-color: #2199e8;
+
 $secondary-color: #777;
 $success-color: #3adb76;
 $warning-color: #ffae00;
@@ -131,24 +133,55 @@ $rem-base: 16px;
 .bg-brown{background:brown;}
 .bg-purple{background:purple;}
 .bg-banner{background-image:url(/assets/img/banner1.png);background-position: 0;}
+.bg-dark{background:rgb(85, 85, 85);}
 
 /* text */
 .uc { text-transform: uppercase; }
+.baseline { vertical-align: baseline; }
 
-p.big {
-	color:#fff;
-	font-size: 120%;
+
+.sans { font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.serif { font-family: 'Droid Serif', Georgia, serif; }
+
+p
+{
+	vertical-align: baseline;
+	line-height: 22px;
+	font-size: 0.85714285714286rem;
+	font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: rgb(85, 85, 85);
 }
-.sans{font-family:'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
-.serif{font-family:'Droid Serif', Georgia, serif;}
-p {vertical-align: baseline;line-height:22px;font-size:12px;font-family:'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;color: rgb(85, 85, 85);}
-h2,h3,h4,h5,h6{color: rgb(85, 85, 85);font-family:'Droid Serif', Georgia, serif;}
-h2 {margin-top:20px;
-	font-size:16px;background: transparent url(/assets/img/line.gif) 0 center repeat-x;
-	span {background:#fff;padding:10px;padding-right:10px;}
+
+/*	headings 	*/
+
+h2,h3,h4,h5,h6
+{
+	color: rgb(85, 85, 85);
+	font-family: 'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	margin-top:20px;
+	font-family:'Droid Serif', Georgia, serif;
+	font-size:16px;
+	background: transparent url(/assets/img/line.gif) 0 center repeat-x;
+	span
+	{
+		background: #fff;
+		padding: 10px;
+		padding-right: 10px;
 	}
-h3{font-size:1rem;font-weight:700;}
-h4{font-size:1rem;em{background:none;padding:2rem;margin:2rem;}}
+}
+
+h3 {
+	font-size:13px;
+	font-weight:500;
+}
+h4{
+	font-size:1rem;margin-top:20px;
+		margin-bottom:40px;color:red;
+
+}
 h5
 {
 	font-size: 0.9rem;
@@ -156,12 +189,34 @@ h5
 }
 
 /*	buttons */
+button{border-color:red;}
+a.button.hollow{margin: 1rem 1rem 1rem 0;}
 
-/*	banner	*/
-#banner {color:#ffffff;background-color: #B0C6C5;
+/*	payoff	*/
+
+#payoff {
+	p
+	{
+		color: #fff;
+		font-size: 120%;
+		width:100%;
+	}
+	h1 { @extend .uc; }
+	color:#ffffff;background-color: #B0C6C5;
 	background-image: url(/assets/img/banner1.png);
-	background-position: 0;padding:3rem;}
+	background-position: 0;padding-top:3rem;
+	.button{color:$white;border-color:$white;}
+	}
 
 	/* 	callout	*/
 	.callout{background:#fff;}
-	a.button.hollow{margin: 1rem 1rem 1rem 0;}
+
+/* icon */
+	#icon-digital-sparring{height:60px;}
+
+/*		address	*/
+address{
+	margin:15px 0 20px 0;
+	line-height: 22px;
+	font-size: 0.85714285714286rem;
+	}
