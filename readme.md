@@ -1,5 +1,7 @@
 # ZURB Template
 
+**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+
 This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
 
 - Handlebars HTML templates with Panini
@@ -41,7 +43,7 @@ The CLI will prompt you to give your project a name. The template will be downlo
 To manually set up the template, first download it with Git:
 
 ```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
+git clone https://github.com/zurb/foundation-zurb-template projectname
 ```
 
 Then open the folder in your command line, and install the needed dependencies:
